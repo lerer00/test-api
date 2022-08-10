@@ -1,0 +1,28 @@
+swagger: "2.0"
+info:
+  title: "api-gateway-us"
+  description: "Simple api"
+  version: "1.0.0"
+schemes:
+  - "https"
+x-google-backend:
+  - 
+paths:
+  "/":
+    get:
+      description: "default"
+      operationId: "default"
+      responses:
+        200:
+          description: "Success."
+          schema:
+            type: string
+  "/health":
+    get:
+      description: "health"
+      operationId: "health"
+      responses:
+        200:
+          description: "Success."
+          schema:
+            type: string
